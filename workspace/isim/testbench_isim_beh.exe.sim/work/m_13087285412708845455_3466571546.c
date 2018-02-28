@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_sharedwork/mmips/verilog/signextend.v";
+static const char *ng0 = "/media/sf_SharedWork/mmips/verilog/signextend.v";
 static unsigned int ng1[] = {0U, 0U};
 
 

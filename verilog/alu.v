@@ -129,16 +129,12 @@ module ALU(ctrl, a, b, r, r2, z);
                     end
                 'h14:
 						  begin
-								if (s_int > t_int) begin
+								if (s_int > t_int)
 									result = t_int;
-									$display("Clip ins high:%d:%d:%d", s_int, t_int, result);
-								end else if (s_int < 0) begin
+								else if (s_int < 0)
 									result = 0;
-									$display("Clip ins low:%d:%d:%d", s_int, t_int, result);
-								end else begin
+								else
 									result = s_int;
-									$display("Clip ins eq:%d:%d:%d", s_int, t_int, result);
-								end
 						  end
                 default: //No default case: invallid opcode! 
                     begin 

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue Feb 27 12:16:44 2018">
+  <application stringID="NgdBuild" timeStamp="Wed Feb 28 14:13:49 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -37,15 +37,15 @@
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 16.04.3 LTS"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 16.04.4 LTS"/>
       </item>
       <item stringID="User_EnvHost" value="computation-virtual-machine"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz"/>
-          <item stringID="speed" value="2194.916 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz"/>
+          <item stringID="speed" value="3491.916 MHz"/>
         </row>
       </table>
     </section>
@@ -54,7 +54,7 @@
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx45t-csg324-3"/>
-        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="/media/sf_sharedwork/mmips/mMIPS_sim.ucf"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="/media/sf_SharedWork/mmips/mMIPS_sim.ucf"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">

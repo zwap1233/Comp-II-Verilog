@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../mmips.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUCTRL_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CTRL_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX2_isim_beh.exe"/>
@@ -62,7 +63,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1519724203" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1519724203">
+    <transform xil_pn:end_ts="1519829675" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1519829675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../verilog/add.v"/>
@@ -87,11 +88,11 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1519724245" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1519724245">
+    <transform xil_pn:end_ts="1519829690" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1519829690">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1519724245" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1519724245">
+    <transform xil_pn:end_ts="1519829690" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1519829690">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -99,7 +100,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1519724203" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1519724203">
+    <transform xil_pn:end_ts="1519829675" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1519829675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../verilog/add.v"/>
@@ -124,7 +125,7 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1519724805" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1519724245">
+    <transform xil_pn:end_ts="1519829887" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1519829690">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -136,7 +137,7 @@
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1519725119" xil_pn:in_ck="8184157036772734282" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1519725119">
+    <transform xil_pn:end_ts="1519831818" xil_pn:in_ck="4870209517029490542" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1519831817">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -173,7 +174,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1519730191" xil_pn:in_ck="-3062540204235501214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4623991210646050135" xil_pn:start_ts="1519730136">
+    <transform xil_pn:end_ts="1519833683" xil_pn:in_ck="-3062540204235501214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4623991210646050135" xil_pn:start_ts="1519833649">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -193,9 +194,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1519730206" xil_pn:in_ck="-7803322301089647060" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5302594170066025289" xil_pn:start_ts="1519730191">
+    <transform xil_pn:end_ts="1519823630" xil_pn:in_ck="-7803322301089647060" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5302594170066025289" xil_pn:start_ts="1519823620">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="mMIPS_sim.bld"/>

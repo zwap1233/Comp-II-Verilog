@@ -104,7 +104,6 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                             'h2B:   //Set-on-less-than (unsigned)
                                 ALUctrl = 'h8;
                             'h30: begin	//costum cliping
-										  $display("Costm ins");
 										  ALUctrl = 'h14;
 										  end
                             default:

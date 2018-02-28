@@ -1,0 +1,123 @@
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             661  out of  54576     1%  
+ Number of Slice LUTs:                 2333  out of  27288     8%  
+    Number used as Logic:              2285  out of  27288     8%  
+    Number used as Memory:               48  out of   6408     0%  
+       Number used as RAM:               48
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2535
+   Number with an unused Flip Flop:    1874  out of   2535    73%  
+   Number with an unused LUT:           202  out of   2535     7%  
+   Number of fully used LUT-FF pairs:   459  out of   2535    18%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          75
+ Number of bonded IOBs:                  75  out of    190    39%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              112  out of    116    96%  
+    Number using Block RAM only:        112
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      4  out of     58     6%  
+
+ Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.036ns (Maximum Frequency: 49.911MHz)
+   Minimum input arrival time before clock: 6.386ns
+   Maximum output required time after clock: 19.705ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 20.036ns (frequency: 49.911MHz)
+  Total number of paths / destination ports: 3238577956 / 1347
+-------------------------------------------------------------------------
+Delay:               20.036ns (Levels of Logic = 10)
+  Source:            mMIPS/id_instr_25_0/out_5 (FF)
+  Destination:       imem/ENA_47 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mMIPS/id_instr_25_0/out_5 to imem/ENA_47
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
+     LUT3:I1->O           15   0.203   0.981  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
+     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P8    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<25>)
+     LUT6:I5->O            3   0.205   1.015  mMIPS/alu/Mmux_result548 (mMIPS/bus_alu_result<25>)
+     LUT6:I0->O            3   0.203   0.755  mMIPS/alu/zero<31>1 (mMIPS/alu/zero<31>)
+     LUT6:I4->O           18   0.203   1.050  mMIPS/mux1/sel[0]_GND_3_o_equal_1_o1 (mMIPS/mux1/sel[0]_GND_3_o_equal_1_o)
+     LUT6:I5->O           16   0.205   1.349  imem/rom_addr[31]_Decoder_12_OUT<0><17>11 (imem/rom_addr[31]_Decoder_12_OUT<0><17>1)
+     LUT5:I0->O            1   0.203   0.827  imem/ENA_15_rstpot_SW0 (N262)
+     LUT6:I2->O            1   0.203   0.000  imem/ENA_15_rstpot (imem/ENA_15_rstpot)
+     FD:D                      0.102          imem/ENA_15
+    ----------------------------------------
+    Total                     20.036ns (11.321ns logic, 8.715ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 943 / 895
+-------------------------------------------------------------------------
+Offset:              6.386ns (Levels of Logic = 4)
+  Source:            en (PAD)
+  Destination:       imem/ENA_47 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to imem/ENA_47
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           351   1.222   2.180  en_IBUF (en_IBUF)
+     LUT6:I4->O            3   0.203   1.015  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
+     LUT6:I0->O           17   0.203   1.256  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
+     LUT6:I3->O            1   0.205   0.000  imem/ENA_47_rstpot (imem/ENA_47_rstpot)
+     FD:D                      0.102          imem/ENA_47
+    ----------------------------------------
+    Total                      6.386ns (1.935ns logic, 4.451ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 859424 / 37
+-------------------------------------------------------------------------
+Offset:              19.705ns (Levels of Logic = 8)
+  Source:            mMIPS/id_instr_25_0/out_5 (FF)
+  Destination:       dev_w (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mMIPS/id_instr_25_0/out_5 to dev_w
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
+     LUT3:I1->O           15   0.203   0.981  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
+     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
+     LUT6:I5->O            3   0.205   0.651  mMIPS/alu/Mmux_result756 (mMIPS/bus_alu_result<31>)
+     LUT6:I5->O           42   0.205   1.538  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
+     LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
+     OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
+    ----------------------------------------
+    Total                     19.705ns (13.181ns logic, 6.524ns route)
+                                       (66.9% logic, 33.1% route)
+
+

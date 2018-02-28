@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="NgdBuild" num="989" delta="new" >Failed to process BMM information <arg fmt="%s" index="1">(null)</arg>
+<msg type="error" file="NgdBuild" num="989" delta="old" >Failed to process BMM information <arg fmt="%s" index="1">(null)</arg>
 </msg>
 
 </messages>

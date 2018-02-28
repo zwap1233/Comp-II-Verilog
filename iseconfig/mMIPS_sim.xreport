@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-02-27T12:13:22</DateModified>
+  <DateModified>2018-02-28T17:14:32</DateModified>
   <ModuleName>mMIPS_sim</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_sharedwork/mmips/iseconfig/mMIPS_sim.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_sharedwork/mmips/workspace/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-02-28T14:16:26</SummaryTimeStamp>
+  <SavedFilePath>/media/sf_SharedWork/mmips/iseconfig/mMIPS_sim.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_SharedWork/mmips/workspace/</ImplementationReportsDirectory>
   <DateInitialized>2018-02-09T15:10:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,2 +1,16 @@
-before:2350122 
-after: 2313220
+Clipping
+before:2350122 cycles
+after: 2313220 cycles
+
+Critical path
+after: 2106060 cycles
+
+Foriginal: 56.314MHz
+Coriginal: 2313220 cycles
+Toriginal: 41.077ms
+
+Fnew: 49.911MHz
+Cnew: 2106060 cycles
+Tnew: 42.196ms
+
+G: -2.724%
